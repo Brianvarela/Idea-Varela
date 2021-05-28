@@ -28,10 +28,10 @@ header nav .menu .links a {
   font-size: 20px;
 }
 header nav .menu .links a:hover {
-  border-bottom-color: #e84855;
+  border-bottom-color: #df0013;
 }
 header nav .menu .links a.active {
-  border-bottom-color: #e84855;
+  border-bottom-color: #f5172a;
 }
 
 .body {
@@ -70,7 +70,7 @@ header nav .menu .links a.active {
 h3 {
   text-align: center;
   font-family: "IM Fell DW Pica SC", serif;
-  color: #e84855;
+  color: #f1f1f1;
   font-size: 30px;
   padding: 10%;
 }
