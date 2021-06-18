@@ -7,10 +7,17 @@
     <title>Contacto</title>
     <link rel="stylesheet" href="/Paginas/sass/main.css" /></head
   ><link rel="preconnect" href="https://fonts.gstatic.com" />
+  <link rel="shortcut icon" type="image/jpg" href="/Assets/favicon.png" /><link
+    rel="shortcut icon"
+    type="image/jpg"
+    href="/Assets/favicon.png"
+  />
   <link
     href="https://fonts.googleapis.com/css2?family=Fredericka+the+Great&family=Gayathri:wght@700&family=IM+Fell+DW+Pica+SC&display=swap"
     rel="stylesheet"
-  />
+  /><link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+
   <body class="body">
     <header>
       <nav>
@@ -19,54 +26,66 @@
             <img src="/Assets/icono.png" alt="" />
           </div>
           <div class="links">
-            <a href="/Paginas/Home.html">Home</a>
-            <a href="/Paginas/Empresa.html">Empresa</a>
-            <a href="/Paginas/Destinos.html">Destinos</a>
-            <a href="/Paginas/Servicios.html">Servicios</a>
-            <a href="/Paginas/Contacto.html">Contacto</a>
+            <a href="/Paginas/Home.html"> <strong>Home</strong> </a>
+            <a href="/Paginas/Empresa.html"><strong>Empresa</strong> </a>
+            <a href="/Paginas/Destinos.html"> <strong> Destinos</strong></a>
+            <a href="/Paginas/Servicios.html"> <strong>Servicios</strong> </a>
+            <a href="/Paginas/Contacto.html"> <strong>Contacto</strong> </a>
           </div>
         </div>
       </nav>
+     
     </header>
-    <h1 class="h1"><strong>Viaggi</strong></h1>
+     <h1 class="titulo h1 "><strong>Viaggi</strong></h1>
   </body>
-  <h2 class="h2">Contacto</h2>
-  <br />
 
-  <form class="form">
-    <select name="Contacto">
-      <br />
-      <option value="Reclamo">Reclamo</option>
-      <option value="Ayuda">Ayuda</option>
-      <option value="Comentario">Comentario</option>
-      <option value="Promociones">Promociones</option></select
-    ><br />
-
-    <label for="Nombre">Nombre:</label> <br />
-    <input type="text" id="Nombre" placeholder="Escribe tu  Nombre" /> <br />
-
-    <label for="Apellido">Apellido:</label><br />
-    <input type="text" id="Apellido" placeholder="Escribe tu Apellido" /><br />
-
-    <label for="Email">Email:</label><br />
-    <input type="email" id="Email" placeholder="email@ejemplo.com" /><br />
-
-    <h2>Envianos tu consulta</h2>
-    <br />
-    <br />
-    <textarea
-      name="Envianos tu Consulta"
-      id="Consulta"
-      cols="100"
-      rows="10"
-    ></textarea
-    ><br />
-    <br />
-    <label for="checkbox">Acepto terminos y condiciones</label>
-    <input type="checkbox" name="checkbox" /><br /><br />
-    <input type="submit" /><br /><br />
-    <input type="reset" /><br /><br />
+  <br > <div>
+  <form class="row g-3">
+    <div class="col-md-4">
+      <label for="validationDefault01" class="form-label"> <strong> Nombre</strong></label>
+      <input type="text" class="form-control" id="validationDefault01" value="" required>
+    </div>
+    <div class="col-md-4">
+      <label for="validationDefault02" class="form-label"> <strong>Apellido</strong> </label>
+      <input type="text" class="form-control" id="validationDefault02" value="" required>
+    </div>
+    <div class="col-md-4">
+      <label for="validationDefaultUsername" class="form-label"> <strong> Correo Electronico</strong></label>
+      <div class="input-group">
+        <span class="input-group-text" id="inputGroupPrepend2"> <strong> Email</strong></span>
+        <input type="text" class="form-control" id="validationDefaultUsername"  aria-describedby="inputGroupPrepend2" required>
+      </div>
+    </div>
+    
+    <div class="col-md-3">
+      <label for="validationDefault04" class="form-label"> <strong> Provincia</strong></label>
+      <select class="form-select" id="validationDefault04" required>
+        <option selected disabled value=""> <strong> Elegir...</strong></option>
+        <option>Cordoba</option>
+        <option>Buenos Aires</option>
+        <option>Santa fe</option>
+        <option>Catamarca</option>
+        <option>Tierra del fuego</option>
+        <option>Mendoza</option>
+        <option>Formosa</option>
+        <option>Jujuy</option>
+        <option>Chaco</option>
+      </select>
+    </div>
+    
+    <div class="col-12">
+      <div class="form-check">
+        <input class="form-check-input" type="checkbox" value="" id="invalidCheck2" required>
+        <label class="form-check-label" for="invalidCheck2">
+          Acepto terminos y condiciones
+        </label>
+      </div>
+    </div>
+    <div class="col-12">
+      <button class="btn btn-primary" type="submit">Enviar</button>
+    </div>
   </form>
-
+  
+</div></div>
   <footer class="footer">Derechos Reservados 2003-2021</footer>
 </html>
