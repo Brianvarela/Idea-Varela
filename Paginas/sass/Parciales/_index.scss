@@ -1,54 +1,23 @@
-.titulo {
-  font-size: 140px;
-  text-align: center;
-  font-size: 150px;
-}
-.img {
-  width: 500px;
-}
-.img1 {
-  width: 600px;
-}
-.img2 {
-  width: 700px;
-}
-.img3 {
-  width: 800px;
-}
-* {
-  padding: 0%;
-  margin: 0;
-  -webkit-box-sizing: border-box;
-  box-sizing: border-box;
-}
 header {
   background-color: #47495c8a;
-}
-header nav .menu {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: row;
-  flex-direction: row;
-  -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-}
-header nav .menu .brand img {
-  width: 60px;
+  nav {
+    .menu {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      .brand img {
+        width: 60px;
+      }
+    }
+  }
 }
 header nav .menu .links a {
   font-family: "IM Fell DW Pica SC", serif;
   padding: 12px 10px;
-  color: #0c0a0a;
+  color: rgb(12, 10, 10);
   text-decoration: none;
   border-bottom: 6px solid transparent;
-  -webkit-transition: border 0.3s ease;
   transition: border 0.3s ease;
   font-size: 20px;
 }
@@ -62,6 +31,7 @@ header nav .menu .links a.active {
   background: url(/Assets/fondo.jpg);
   background-size: 100%;
 }
+
 .article,
 .article__p,
 .article__p--h2 {
@@ -71,29 +41,25 @@ header nav .menu .links a.active {
   text-align: center;
   font-family: "IM Fell DW Pica SC", serif;
 }
+
 .footer {
-  color: #030303;
+  color: rgb(3, 3, 3);
   padding: 400px 0px 0px;
 }
+
 .h1 {
   font-size: 150px;
   font-family: "IM Fell DW Pica SC", serif;
   text-align: center;
-  -webkit-transition: -webkit-transform 0.3s;
-  transition: -webkit-transform 0.3s;
   transition: transform 0.3s;
-  transition: transform 0.3s, -webkit-transform 0.3s;
 }
 .h1:hover {
-  -webkit-transform: scale(1.1);
   transform: scale(1.1);
 }
 .img,
 .img1,
 .img2,
 .img3 {
-  -webkit-box-align: center;
-  -ms-flex-align: center;
   align-items: center;
 }
 .h2,
@@ -104,19 +70,18 @@ h3 {
   font-size: 20px;
   background-color: rgba(201, 190, 167, 0.548);
 }
+
 .form {
   font-size: 2rem;
   font-family: "IM Fell DW Pica SC", serif;
   padding: 20%;
   color: #e84855;
 }
+
 .grid-container,
 .grid-container div {
-  display: -ms-grid;
   display: grid;
-  -ms-grid-columns: auto auto;
   grid-template-columns: auto auto;
-  -ms-grid-rows: 100px 100px 100px 100px;
   grid-template-rows: 100px 100px 100px 100px;
   font-family: "IM Fell DW Pica SC", serif;
   text-align: center;
@@ -127,21 +92,12 @@ h3 {
 }
 .time {
   font-size: 15px;
-  color: #fffdfd;
+  color: rgb(255, 253, 253);
 }
 .flex-container {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
   justify-content: space-between;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: column;
   flex-direction: column;
-  -ms-flex-line-pack: center;
   align-content: center;
   padding: 100px;
 }
-/*# sourceMappingURL=main.css.map */

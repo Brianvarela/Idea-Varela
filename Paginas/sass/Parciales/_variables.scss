@@ -1,0 +1,21 @@
+$variable-1: 7px;
+
+.titulo {
+  font-size: $variable-1 * 20;
+  text-align: center;
+  font-size: 150px;
+}
+$variable2: 500px;
+
+.img {
+  width: $variable2;
+}
+.img1 {
+  width: $variable2 + 100px;
+}
+.img2 {
+  width: $variable2 + 200px;
+}
+.img3 {
+  width: $variable2 + 300px;
+}
