@@ -1,3 +1,8 @@
+.footer {
+  width: 100% !important;
+
+  color: white !important;
+}
 header {
   background-color: #47495c8a;
   nav {
@@ -27,6 +32,7 @@ header nav .menu .links a:hover {
 header nav .menu .links a.active {
   border-bottom-color: #f5172a;
 }
+
 .body {
   background: url(/Assets/fondo.jpg);
   background-size: 100%;
@@ -42,33 +48,32 @@ header nav .menu .links a.active {
   font-family: "IM Fell DW Pica SC", serif;
 }
 
-.footer {
-  color: rgb(3, 3, 3);
-  padding: 400px 0px 0px;
-}
-
 .h1 {
-  font-size: 150px;
-  font-family: "IM Fell DW Pica SC", serif;
-  text-align: center;
-  transition: transform 0.3s;
+  color: #000000 !important;
+  font-size: 150px !important ;
+  font-family: "IM Fell DW Pica SC", serif !important ;
+  text-align: center !important  ;
+  transition: transform 0.3s !important ;
 }
 .h1:hover {
   transform: scale(1.1);
 }
-.img,
-.img1,
-.img2,
-.img3 {
+.imagen,
+.imagen1,
+.imagen2,
+.imagen3 {
   align-items: center;
+  width: 96%;
+  max-width: 960px;
+  margin: 0 auto;
 }
 .h2,
 h3 {
   text-align: center;
   font-family: "IM Fell DW Pica SC", serif;
   color: #000000;
-  font-size: 20px;
-  background-color: rgba(201, 190, 167, 0.548);
+  font-size: 20px !important;
+  background-color: rgba(72, 121, 148, 0.507);
 }
 
 .form {
@@ -100,4 +105,7 @@ h3 {
   flex-direction: column;
   align-content: center;
   padding: 100px;
+}
+strong {
+  color: #000000;
 }
